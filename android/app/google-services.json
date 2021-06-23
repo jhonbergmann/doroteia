@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "163950376108",
+    "project_id": "doroteia-7089b",
+    "storage_bucket": "doroteia-7089b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163950376108:android:c9c308382bdcbaea511b09",
+        "android_client_info": {
+          "package_name": "com.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163950376108-8l9cbu0hgkj8stfdrb0fdcm7m5dth0ba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHn9zNhiGAePw_IPnRP2cCFE2H6_iN9z0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163950376108-8l9cbu0hgkj8stfdrb0fdcm7m5dth0ba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

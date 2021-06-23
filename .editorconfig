@@ -1,0 +1,16 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = crlf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# indent_style: defina como tabulação ou espaço para usar as guias rígidas ou as guias virtuais, respectivamente.
+# indent_size: um número inteiro que define o número de colunas usadas para cada nível de recuo e a largura das soft tabs (quando suportadas). Quando definido como tab , o valor de tab_width(se especificado) será usado.
+# end_of_line: defina como lf , cr ou crlf para controlar como as quebras de linha são representadas.
+# charset: defina como latin1 , utf-8 , utf-8-bom , utf-16be ou utf-16le para controlar o conjunto de caracteres.
+# trim_trailing_whitespace: definido como verdadeiro para remover todos os caracteres de espaço em branco que precedem os caracteres de nova linha e falso para garantir que não.
+# insert_final_newline: definido como verdadeiro para garantir que o arquivo termine com uma nova linha ao salvar e falso para garantir que não termine.

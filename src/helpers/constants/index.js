@@ -1,0 +1,165 @@
+// REGEXS
+export const regexps = {
+  name: /^[A-zÀ-ÿ']+\s([A-zÀ-ÿ']+\s)*[A-zÀ-ÿ']+$/,
+  word: /[\S\s]+/,
+  email: /^[A-z0-9.-]+@[A-z0-9-]{2,}\.[A-z]{2,}\.?([A-z]+)?$/,
+  password: /^(?=.*\d)(?=.*[a-z])[0-9a-zA-Z!$*&@#]{8,}$/,
+  phone:
+    /^\(?(?:[14689][1-9]|2[12478]|3[1234578]|5[1345]|7[134579])\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$/,
+  telegram: /^@[A-zÀ-ÿ'-]{5,}$/,
+  verificationCode: /\d{6}/,
+  discord: /^[A-zÀ-ÿ'\.\s]+#\d{4}$/,
+}
+
+// STEPS TOTAL
+export const TotalSteps = 9
+
+// ONBOARDING
+export const onboarding = [
+  {
+    key: '01',
+    image: require('../../../assets/imgs/onboarding/first-step.png'),
+    title: `Bem-vindx ao ${'\n'}[Nome do app]!`,
+    text: 'Explore dicas, compartilhe projetos e troque conteúdos com seus colegas de trabalho!',
+  },
+  {
+    key: '02',
+    image: require('../../../assets/imgs/onboarding/second-step.png'),
+    title: 'Tenha uma equipe multidisciplinar!',
+    text: 'Receba ajuda de forma ágil de todas as áreas do hub.',
+  },
+  {
+    key: '03',
+    image: require('../../../assets/imgs/onboarding/third-step.png'),
+    title: `Solucione suas ${'\n'}dúvidas em tempo real!`,
+    text: 'Você também pode conversar por chat com seus colegas de área!',
+  },
+  {
+    key: '04',
+    image: require('../../../assets/imgs/onboarding/fourth-step.png'),
+    title: 'Pronto!',
+    text: 'Bora trocar conhecimento?',
+    done: true,
+  },
+]
+
+// STEPS
+export const steps = {
+  FirstSetpRegisterName: {
+    title: 'Seja muito bem-vindo!',
+    text: 'Vamos começar nos apresentando? Me conta como você se chama.',
+  },
+  SecondStepRegisterEmail: {
+    title: 'Um pouco sobre você',
+    text: 'Só algumas informações para ajudar na nossa comunicação: Qual é o seu e-mail coorporativo?',
+  },
+  ThirdStepRegisterStartup: {
+    title: 'Um pouco sobre você',
+    text: 'Em qual das Startups do Hub 4all você trabalha?',
+  },
+  FourthStepRegisterArea: {
+    title: 'Um pouco sobre você',
+    text: 'E a sua área de atuação, qual é?',
+  },
+  FifthStepRegisterTechnologies: {
+    title: 'Um pouco sobre você',
+    text: 'Selecione algumas tecnologias e ferramentas que você tem familiaridade.',
+  },
+  SixthStepRegisterContact: {
+    title: 'Contato',
+    text: 'Para finalizar: por onde posso me comunicar com você?',
+  },
+  SeventhStepRegisterPassword: {
+    title: 'Crie sua senha',
+    text: 'Garanta que ela tenha ao menos 8 caracteres, misturando letras e números.',
+  },
+  EighthStepRegisterVerification: {
+    title: 'Valide seu cadastro!',
+    text: 'Um e-mail de validação deve ter caído em sua caixa de e-mail agora mesmo. Valide-o clicando no link.',
+  },
+  RegistrationSuccess: {
+    title: 'Deu de enrolação, bora solucionar suas dúvidas!',
+    text: 'Seu cadastro foi concluído com sucesso, \nseja muito bem-vindo.',
+  },
+  RegistrationFail: {
+    title: 'Ops... parece que algo deu errado',
+    text: 'Não foi possível realizar seu cadastro. \nTente inserir seus dados novamente.',
+  },
+}
+
+export const strings = {
+  close: 'Fechar',
+  contacts: 'Contato(s)',
+  description: 'Descrição',
+  discord: 'Discord',
+  login: 'Login',
+  next: ' Próximo',
+  previous: 'Anterior ',
+  solution: 'Solução',
+  teams: 'Teams',
+  telegram: 'Telegram',
+  whatsapp: 'Whatsapp',
+  forgotPassword: 'ESQUECI MINHA SENHA',
+  resendCode: 'Reenviar e-mail em:',
+  signInWelcome: 'Que bom te ver de novo!',
+  nextButton: 'Avançar',
+  resendCodeButton: 'Reenviar e-mail',
+  restartButton: 'Voltar para o início',
+  retryButton: 'Tentar novamente',
+  signInButton: 'Entrar',
+  signUpButton: 'Ainda não tenho cadastro',
+  startButton: 'Começar',
+  validateButton: 'Validar',
+  colonArea: 'Área: ',
+  colonAuthor: 'Autor: ',
+  colonDiscord: 'Discord: ',
+  colonStartup: 'Startup: ',
+  colonTeams: 'Teams: ',
+  colonTecnology: 'Tecnologia: ',
+  colonTelegram: 'Telegram: ',
+  colonWhatsapp: 'Whatsapp: ',
+  dropdownArea: 'Selecione a área que você atua',
+  dropdownStartup: 'Selecione a sua Startup',
+  feedbackSignInError: 'E-mail ou senha incorretos',
+  feedbackPositiveName: 'Nome válido',
+  feedbackNegativeName: 'Nome inválido',
+  feedbackPositiveWord: 'Informação válida',
+  feedbackNegativeWord: 'Informação inválida',
+  feedbackPositiveEmail: 'E-mail válido',
+  feedbackNegativeEmail: 'E-mail inválido',
+  feedbackPositiveEmailSignIn: '',
+  feedbackNegativeEmailSignIn: 'Por favor, digite um e-mail válido',
+  feedbackPositivePassword: 'Perfeito!',
+  feedbackNegativePassword: 'Senha insegura, insira uma mais forte',
+  feedbackPositivePasswordSignIn: '',
+  feedbackNegativePasswordSignIn: 'Por favor, digite uma senha',
+  feedbackPositivePasswordConfirm: 'Senha confirmada',
+  feedbackNegativePasswordConfirm: 'Os campos não condizem entre si',
+  feedbackPositivePhone: 'Telefone válido',
+  feedbackNegativePhone: 'Telefone inválido',
+  feedbackPositiveVerification: 'Código válido',
+  feedbackNegativeVerification: 'Código incorreto. Tente novamente!',
+  placeholderEmailSignIn: 'Informe seu e-mail',
+  placeholderPasswordSignIn: 'Digite a sua senha',
+  placeholderName: 'Informe seu nome',
+  placeholderEmail: 'Informe seu e-mail',
+  placeholderWord: 'Informe:',
+  placeholderTechnology: 'Informe a tecnologia',
+  placeholderWhatsapp: 'seu número no Whatsapp',
+  placeholderEmailTeams: 'seu email no Teams',
+  placeholderTelegram: 'seu contato no Telegram',
+  placeholderIdDiscord: 'seu id no Discord',
+  placeholderPassword: 'Digite a sua senha',
+  placeholderPasswordConfirm: 'Confirme a sua senha',
+  placeholderPhone: '99 99999-9999',
+  titleEmail: 'E-mail',
+  titlePassword: 'Senha',
+  titleName: 'Nome',
+  titleCoorporativeEmail: 'E-mail coorporativo',
+  titleStartup: 'Startup',
+  titleArea: 'Área',
+  titleExtra: 'Outra(s)?',
+  titleConfirmPassword: 'Confirme a senha',
+  titleValidationCode: 'Código de verificação',
+  toAnswer: 'Responder',
+}
